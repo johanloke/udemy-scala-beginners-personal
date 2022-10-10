@@ -1,5 +1,7 @@
 package lectures.part1basics
 
+import scala.annotation.tailrec
+
 object Functions extends App {
   def aFunction(a: String, b: Int): String = {
     a + " " + b
@@ -51,6 +53,7 @@ object Functions extends App {
   println(fibonacci(7))
 
   def isPrime(n: Int): Boolean = {
+    @tailrec
     def isPrimeUntil(t: Int): Boolean =
       if(t <= 1) true
       else n % t != 0 && isPrimeUntil(t-1)
@@ -58,6 +61,8 @@ object Functions extends App {
     isPrimeUntil(n / 2)
   }
 
-  println(isPrime(5))
+  println(isPrime(37))
+  println(isPrime(2003))
+  println(isPrime(37*2003))
 
 }
