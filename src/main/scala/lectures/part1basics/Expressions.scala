@@ -52,4 +52,14 @@ object Expressions extends App{
 
   //Error because z exist only within code block
   //val anotherValue = z + 1
+
+  val someValue = {
+    2 < 3
+  }
+
+  val someOtherValue = {
+    if(someValue) 239 else 986
+  }
+
+  println(someOtherValue)
 }
