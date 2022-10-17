@@ -49,7 +49,6 @@ object WhatsAFunction extends App{
   println(adder3(4))
 
   println(superAdder(3)(4)) // curried function
-  println(specialAdder(5)(9))
 
 }
 
