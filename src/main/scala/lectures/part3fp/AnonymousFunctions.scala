@@ -15,7 +15,7 @@ object AnonymousFunctions extends App {
   val justDoSomething: () => Int = () => 3
 
   //careful
-  println(justDoSomething)  //function itself
+  println(justDoSomething) //function itself
   println(justDoSomething()) // call
 
   // curly braces with lambdas

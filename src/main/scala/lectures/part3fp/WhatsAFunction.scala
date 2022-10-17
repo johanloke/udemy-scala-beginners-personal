@@ -1,6 +1,6 @@
 package lectures.part3fp
 
-object WhatsAFunction extends App{
+object WhatsAFunction extends App {
 
   // Dream: using functions as first class elements
   // Problem: we come from an oop world. everything is an object
@@ -39,7 +39,7 @@ object WhatsAFunction extends App{
   println(concatenator("Good ", "Morning"))
 
   // Function1 [Int, Function1[Int, Int]]
-  val superAdder: Function1 [Int, Function1[Int, Int]] = new Function1[Int, Function1[Int, Int]] {
+  val superAdder: Function1[Int, Function1[Int, Int]] = new Function1[Int, Function1[Int, Int]] {
     override def apply(x: Int): Function1[Int, Int] = new Function1[Int, Int] {
       override def apply(y: Int): Int = x + y
     }
