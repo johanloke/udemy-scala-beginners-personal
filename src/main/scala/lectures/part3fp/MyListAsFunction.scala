@@ -180,4 +180,11 @@ object ListTest extends App {
   println(listOfIntegers1.sort((x, y) => y - x))
   println(anotherlistOfIntegers.zipwith[String, String](listOfString1, _ + "-" + _))
   println(listOfIntegers1.fold(0)(_ + _))
+
+  //for comprehension
+  val combine = for {
+    l1 <- listOfIntegers1
+    l2 <- listOfString1
+  } yield l1 + "-" + l2
+  println(combine)
 }
